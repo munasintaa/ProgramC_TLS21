@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float weight, height, bmi;
+    
+    cout<<"BODY MASS INDEX PROGRAM";
+    cout<<"\n--------------------------------";
+    cout<<"\nYou want to know your BMI? Here you go!";
+    cout<<"\nInsert your weight (kg) : ";
+    cin>>weight;
+    cout<<"Insert your weight (m) : ";
+    cin>>height;
+    bmi=weight/(height*height);
+    
+     cout<<"Your BMI is "<<bmi;
+    if (bmi<18.5){
+        cout<<" (underweight)";
+    } else if (bmi>=18.5 && bmi<25.0){
+        cout<<" (normal)";
+    } else if (bmi>=25.0 && bmi<30.0){
+        cout<<" (overweight)";
+    } else {
+        cout<<" (obese)";
+    }    
+    return 0;
+}
